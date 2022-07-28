@@ -4,11 +4,11 @@
    box-sizing: border-box;
    border: none;
 
-   font-family: "Open Sans", Arial, sans-serif;
+   font-family: "Open Sans";
 }
 
 @font-face {
-   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+   font-family: 'Open Sans';
    src: url('../fonts/OpenSans-Bold.woff2') format('woff2'),
       url('../fonts/OpenSans-Bold.woff') format('woff'),
       url('../fonts/OpenSans-Bold.ttf') format('truetype');
@@ -17,7 +17,7 @@
 }
 
 @font-face {
-   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+   font-family: 'Open Sans';
    src: url('../fonts/OpenSans-Regular.woff2') format('woff2'),
       url('../fonts/OpenSans-Regular.woff') format('woff'),
       url('../fonts/OpenSans-Regular.ttf') format('truetype');
@@ -29,14 +29,16 @@
 
 
 .visually-hidden {
-   position: absolute;
+   /* position: absolute;
    width: 1px;
    height: 1px;
    margin: -1px;
    padding: 0;
    border: 0;
    clip: rect(0 0 0 0);
-   overflow: hidden;
+   overflow: hidden; */
+   position: fixed;
+   transform: scale(0);
 }
 
 .title-underline {
@@ -286,8 +288,6 @@ html {
    resize: none;
 }
 
-.popup__submit-btn {}
-
 
 /* ----------------------popup конец---------------------- */
 
@@ -355,7 +355,7 @@ html {
    width: 100%;
    list-style-type: none;
    display: flex;
-   font-display: row;
+   flex-direction: row;
 }
 
 .menu-item:nth-child(n + 2) {
@@ -859,8 +859,6 @@ html {
    align-items: center;
 }
 
-.shop-card__pic {}
-
 .shop-card__pic-img {
    width: 100%;
 }
@@ -1103,8 +1101,6 @@ html {
       flex-direction: column;
       gap: 40px;
    }
-
-   .main {}
 
    .article {
       flex-direction: column;
