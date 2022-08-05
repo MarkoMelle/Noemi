@@ -118,6 +118,10 @@ html {
    top: 0;
    left: 0;
 
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
    display: none;
 
    width: 100vw;
@@ -139,9 +143,6 @@ html {
 .popup {
    position: relative;
 
-   display: flex;
-   flex-direction: column;
-   align-items: center;
    margin: 10vh auto;
    padding: 50px 30px;
    max-width: 392px;
@@ -435,10 +436,7 @@ html {
 }
 
 .trends {
-   width: 100%;
    max-width: 1660px;
-   margin: 0 auto;
-
 }
 
 .trends__title {
@@ -871,8 +869,8 @@ html {
    flex-wrap: wrap;
    flex: 1;
    align-content: flex-start;
-   align-items: flex-end;
-   padding: 50px 20px 25px;
+   align-items: flex-end; 
+   padding: 50px 20px 25px; 
 
    border: 3px solid #b59f5b;
 }
