@@ -119,8 +119,8 @@ html {
    left: 0;
 
    display: flex;
-   flex-direction: column;
    align-items: center;
+   justify-content: center;
 
    display: none;
 
@@ -143,7 +143,6 @@ html {
 .popup {
    position: relative;
 
-   margin: 10vh auto;
    padding: 50px 30px;
    max-width: 392px;
 
@@ -172,8 +171,6 @@ html {
 }
 
 .popup__form {
-   display: flex;
-   flex-direction: column;
    width: 100%;
 
    font-size: 13px;
